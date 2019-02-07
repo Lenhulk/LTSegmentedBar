@@ -6,5 +6,5 @@
 
 *如图：*
 -------------
-<br>
+
 ![img](https://github.com/Lenhulk/LTSegmentedBar/blob/master/LTSegBar.gif)
