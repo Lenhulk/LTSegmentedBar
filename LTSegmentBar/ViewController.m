@@ -20,7 +20,7 @@
     {
         LTSegmentedBarViewController *segBarVC = [[LTSegmentedBarViewController alloc] init];
         
-        segBarVC.segmentedBar.frame = CGRectMake(0, 0, 300, 35);
+        segBarVC.segmentedBar.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 35);
         self.navigationItem.titleView = segBarVC.segmentedBar;
         
         segBarVC.view.frame = self.view.frame;
@@ -37,7 +37,7 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        NSArray *items = @[@"Martin", @"Neo", @"Lenhulk", @"飞天的茅台", @"吹白酒的吴京", @"HelloWorld"];
+        NSArray *items = @[@"HelloWorld", @"Josephine", @"Lenhulk", @"走过路过给个star", @"大石碎胸口", @"飞天茅台"];
         
         UIViewController *vc1 = [UIViewController new];
         vc1.view.backgroundColor = [UIColor redColor];
@@ -65,16 +65,16 @@
         [self.segBarVC.segmentedBar updateWithConfig:^(LTSegmentedBarConfig *config) {
             
             // 普通赋值
-//            config.segmentedBarBackgroundColor = [UIColor cyanColor];
 //            config.itemNormalColor = [UIColor brownColor];
 //            config.itemSelectColor = [UIColor yellowColor];
-//            config.itemFont = [UIFont fontWithName:@"Zapfino" size:10];
-//            config.indicatorHeight = 3;
-//            config.indicatorColor = [UIColor blueColor];
+//            config.itemFont = [UIFont fontWithName:@"Zapfino" size:14];
+//            config.indicatorHeight = 2;
+//            config.indicatorColor = [UIColor yellowColor];
 //            config.indicatorExtraW = 10;
             
             // 链式编程
-            config.lNormalColor([UIColor whiteColor]).lSelectColor([UIColor orangeColor]).lIndicatorColor([UIColor orangeColor]).lIndicatorH(2.0).lIndicatorExtraW(8).lBackColor([UIColor grayColor]);
+            config.lNormalColor([UIColor whiteColor]).lSelectColor([UIColor orangeColor]).lIndicatorColor([UIColor orangeColor]).lIndicatorH(2.0).lIndicatorExtraW(8).lBackColor([UIColor lightGrayColor]);
+            
         }];
         
         
