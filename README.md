@@ -7,4 +7,4 @@
 *如图：*
 -------------
 <br>
-![img](LTSegBar.gif)
+![img](/LTSegBar.gif)
