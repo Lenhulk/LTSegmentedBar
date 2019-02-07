@@ -7,4 +7,4 @@
 *如图：*
 -------------
 <br>
-![img](/LTSegBar.gif)
+![img](https://github.com/Lenhulk/LTSegmentedBar/blob/master/LTSegBar.gif)
